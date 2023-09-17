@@ -1,0 +1,355 @@
+/* el asterisco es un selector universal*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #C5C0C0;
+}
+
+/* Ejemplo Mobile First*/
+#body-index{
+    background-color: #C5C0C0
+}
+
+@media (min-width: 768px) {
+    #body-index{
+        background-color: #7F7F7F;
+    }
+}
+
+@media (min-width= 992px) {
+    #body-index{
+    background-color: #A8BA9A
+    
+    }
+    
+}
+
+h1{
+    color: midnightblue;
+    text-align: center;
+    font-size: 15px;
+    
+}
+
+header{
+    background-color: #232323;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .9;
+}
+
+#arriba {
+background-color: none;
+color: #2A294D;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* Selector de clase o class*/
+
+
+.color-verde{
+    color: black;
+    font-size: 15px;
+    background-color: lightgrey;
+    margin: 15px 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+    margin-left: 5px;
+}
+
+.link-externo{
+    font-size: 15px;
+    margin-left: 15px;
+    }
+
+.fondo-imagen{
+    background-image: url(../img/background-2-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 25px
+    
+}
+
+
+.px{
+    font-size: 16px;
+    text-align: center;
+    font-style: oblique;
+}
+
+.rem{
+    font-size: 1rem; /* 2.5 rem = 25 px*/
+    text-align: center;
+    font-style: oblique;
+}
+
+.lista-nav li{
+    display: inline;
+    font-size: 15px;
+    text-decoration: double;
+    gap: 20px;
+}
+
+.logo{
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    
+}
+
+.alinear{
+    width: 250px;
+    height: 250px;
+    margin: 0 5px;
+}
+
+/* Galeria*/
+#galeria{
+    display: grid;
+    grid-template-areas:
+    "foto1 foto1 foto2 foto2 foto2"
+    "foto1 foto1 foto2 foto2 foto2"
+    "foto3 foto3 foto4 foto4 foto4"
+    "foto3 foto3 foto4 foto4 foto4"
+    ;
+    max-width: 100%;
+    gap: 5px;
+    margin: 30px 0; 
+    justify-content: center;
+}
+
+.foto1,.foto2,.foto3,.foto4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 350px;
+    margin: 0 5px;
+}
+
+#galeria img{
+    width: 350px;
+    height: 350px;
+    margin: 0 5px;
+}
+
+.foto1{
+    background-image: url(../img/imagen-muestra-1.jpeg);
+    grid-area: foto1;
+
+}
+
+.foto2{
+    background-image: url(../img/imagen-muestra-2.jpeg);
+    grid-area: foto2;
+    width: 350px;
+    height: 350px;
+
+
+}
+
+.foto3{
+    background-image: url(../img/imagen-muestra-3.jpeg);
+    grid-area: foto3;
+
+}
+
+.foto4{
+    background-image: url(../img/imagen-muestra-4.jpeg);
+    grid-area: foto4;
+
+}
+
+/*max width*/
+@media (max-width: 991px) {
+    #galeria{
+        grid-template-areas: 
+        "foto1 foto2"
+        "foto3 foto4";
+    }
+    .foto1,.foto2,.foto3,.foto4{
+        height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    #galeria{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .foto1,.foto2,.foto3,.foto4 {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+
+.trabajos{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Buena practica tenerlo siempre*/
+img{
+    max-width: 100%;
+}
+
+.enlaces {
+    color: #232323;
+    background-color: #C5C0C0;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.banner{
+    background-image: url(../img/banner-fondo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .banner h1{
+        background-color: #C5C0C0;
+        color: #2A294D;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    section{
+        margin: 50px 0;
+        font-size: 15px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .h2-experiencia{
+        margin-top: 20px;
+
+    }
+
+    .parrafo-desc{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    /* Cards */
+    .card{
+        background-color: #232323;
+        color: #C5C0C0;
+        font-family: 'Noto Sans', sans-serif;
+        width: 300px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .padre-cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+footer{
+    background-color: #232323;
+    color: #C5C0C0;
+    text-align: center;
+    padding: 30px;
+}
+
+.redes-sociales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 30%;
+    right: 50px;
+}
+
+.icono-redes{
+    width: 30px;
+}
+
+.boton-arriba{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+}
+
+/* Sintaxis de las media queries*/
+@media (max-width: 480px) and (min-width: 992px) {
+    section {
+        text-align: center;
+    }
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        
+    }
+}
+
+.lista-nav2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+@media (min-width: 560px) {
+    .lista-nav2{
+        flex-direction: row;
+    }
+}
+
+
+
