@@ -42,14 +42,9 @@ h1{
 
 header{
     background-color: #232323;
+    list-style: none;
 }
 
-#arriba {
-background-color: none;
-color: #2A294D;
-font-weight: bold;
-cursor: pointer;
-}
 
 /* Selector de clase o class*/
 
@@ -69,14 +64,6 @@ ul, ol{
     list-style: none;
     margin-left: 5px;
 }
-
-.link-externo{
-    font-size: 15px;
-    margin-left: 15px;
-    }
-
-.fondo-imagen{
-    background-image: url(../img/background-2-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -111,11 +98,6 @@ ul, ol{
     
 }
 
-.alinear{
-    width: 250px;
-    height: 250px;
-    margin: 0 5px;
-}
 
 /* Galeria*/
 .carousel-item img{
