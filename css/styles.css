@@ -15,18 +15,18 @@ body{
 }
 
 /* Ejemplo Mobile First*/
-#body-index{
+#body-index, #body-galeria, #body-historia, #body-servicios, #body-contacto{
     background-color: #C5C0C0
 }
 
 @media (min-width: 768px) {
-    #body-index{
+    #body-index, #body-galeria, #body-historia, #body-servicios, #body-contacto{
         background-color: #7F7F7F;
     }
 }
 
 @media (min-width= 992px) {
-    #body-index{
+    #body-index, #body-galeria, #body-historia, #body-servicios, #body-contacto{
     background-color: #A8BA9A
     
     }
