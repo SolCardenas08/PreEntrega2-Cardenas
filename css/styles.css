@@ -42,13 +42,6 @@ h1{
 
 header{
     background-color: #232323;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    opacity: .9;
 }
 
 #arriba {
@@ -125,86 +118,33 @@ ul, ol{
 }
 
 /* Galeria*/
-#galeria{
-    display: grid;
-    grid-template-areas:
-    "foto1 foto1 foto2 foto2 foto2"
-    "foto1 foto1 foto2 foto2 foto2"
-    "foto3 foto3 foto4 foto4 foto4"
-    "foto3 foto3 foto4 foto4 foto4"
-    ;
-    max-width: 100%;
-    gap: 5px;
-    margin: 30px 0; 
-    justify-content: center;
+.carousel-item img{
+    height: 45vh
 }
 
-.foto1,.foto2,.foto3,.foto4 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 350px;
-    height: 350px;
-    margin: 0 5px;
-}
-
-#galeria img{
-    width: 350px;
-    height: 350px;
-    margin: 0 5px;
-}
-
-.foto1{
-    background-image: url(../img/imagen-muestra-1.jpeg);
-    grid-area: foto1;
-
-}
-
-.foto2{
-    background-image: url(../img/imagen-muestra-2.jpeg);
-    grid-area: foto2;
-    width: 350px;
-    height: 350px;
-
-
-}
-
-.foto3{
-    background-image: url(../img/imagen-muestra-3.jpeg);
-    grid-area: foto3;
-
-}
-
-.foto4{
-    background-image: url(../img/imagen-muestra-4.jpeg);
-    grid-area: foto4;
-
-}
-
-/*max width*/
-@media (max-width: 991px) {
-    #galeria{
-        grid-template-areas: 
-        "foto1 foto2"
-        "foto3 foto4";
-    }
-    .foto1,.foto2,.foto3,.foto4{
-        height: 200px;
+@media (min-width: 520px) {
+    .carousel-item img {
+        height: 50vh;
     }
 }
 
-@media (max-width: 767px) {
-    #galeria{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
+@media (min-width: 768px) {
+    .carousel-item img {
+        height: 70vh;
     }
-    .foto1,.foto2,.foto3,.foto4 {
-        width: 200px;
-        height: 250px;
+    }
+
+
+@media (min-width: 1024px) {
+    .carousel-item img {
+        height: 80vh;
     }
 }
+
+#carouselExampleFade{
+    width: 70%;
+}
+
 
 
 .trabajos{
@@ -267,22 +207,41 @@ img{
 
     /* Cards */
     .card{
-        background-color: #232323;
-        color: #C5C0C0;
-        font-family: 'Noto Sans', sans-serif;
-        width: 300px;
-        padding: 30px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        max-width: 100%;
+    }
+
+    .card-img-top {
+        height: 300px;
     }
 
     .padre-cards{
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
+        
         gap: 20px;
+    }
+
+    @media (min-width: 768px){
+        .padre-cards{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-items: start;
+            
+        }
+    }
+
+    @media (min-width: 992px){
+        .padre-cards{
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+    }
+
+    .icono-texto img{
+        width: 70px;
+        
     }
 
 footer{
