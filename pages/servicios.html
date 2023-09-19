@@ -52,12 +52,79 @@
 
 
     <section class=" container row mx-auto">
-        <h1 class=" fondo-imagen">Servicios</h1>
+        <h1>Servicios</h1>
 
         <h2>Contamos con una amplia variedad de servicios para ofrecera nuestros clientes</h2>
 
-        <p class="color-verde">Solicita tu diagnostico sin cargo y recibì un asesoramiento personalizado.</p>
-        <p class="color-verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ducimus hic, id autem nobis a numquam cupiditate laborum, sapiente earum distinctio repellat officiis necessitatibus odit optio debitis ex nesciunt. Vitae!</p>
+        <p>Solicita tu diagnostico sin cargo y recibì un asesoramiento personalizado.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ducimus hic, id autem nobis a numquam cupiditate laborum, sapiente earum distinctio repellat officiis necessitatibus odit optio debitis ex nesciunt. Vitae!</p>
+    </section>
+
+    <section class="my-5">
+        <h1 class="text-center">Nuestras mejores recetas, resultan en las mejores comidas</h1>
+        <p class="text-center">Pide tus comidas favoritas y te las llevamos con nuestro propio delivery</p>
+    
+        <div class="filtro">
+            <input type="radio" name="seleccionado" id="electronicas">
+            <input type="radio" name="seleccionado" id="mecanicas">
+            <input type="radio" name="seleccionado" id="todas" checked>
+    
+            <div class="container-opciones my-5">
+                <label for="electronicas" class="label-electronicas">
+                    Servicio de electronica
+                </label>
+    
+                <label for="mecanicas" class="label-mecanicas">
+                    Servicio de mecanica
+                </label>
+    
+                <label for="todas" class="label-todas">
+                    Ver todas
+                </label>
+            </div>
+    
+            <div class="padre-cards">
+                <!-- CARDS SERVICIOS CON BOOTSTRAP-->
+
+                <!-- CARD 1 -->
+                <div class="card" style="width: 18rem;">
+                    <img src="../img/card-1.jpeg" class="card-img-top" alt="Servicio1">
+                    <div class="card-body">
+                      <h5 class="card-title">Escaneo</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Cotizar servicio</a>
+                    </div>
+                </div>
+                <!-- CARD 2 -->               
+                <div class="card electro" style="width: 18rem;">
+                    <img src="../img/card-2.jpeg" class="card-img-top" alt="Servicio2">
+                    <div class="card-body">
+                      <h5 class="card-title">Diagnostico</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Cotizar servicio</a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card mecanica" style="width: 18rem;">
+                    <img src="../img/card-3.jpeg" class="card-img-top" alt="Servicio3">
+                    <div class="card-body">
+                      <h5 class="card-title">Distribucion</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Cotizar servicio</a>
+                    </div>
+                </div>
+                <!-- CARD 4 -->
+                <div class="card mecanica" style="width: 18rem;">
+                    <img src="../img/card-4.jpeg" class="card-img-top" alt="Servicio4">
+                    <div class="card-body">
+                      <h5 class="card-title">Inyeccion</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Cotizar servicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="text.center">
