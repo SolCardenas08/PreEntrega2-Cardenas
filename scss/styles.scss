@@ -1,6 +1,7 @@
 @import "estilos-index";
 @import "estilos-comunes";
 @import "estilos-galeria";
+@import "estilos-servicios";
 
 /* el asterisco es un selector universal*/
 *{
@@ -13,7 +14,7 @@ html{
 }
 
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     background-color: #C5C0C0;
 }
@@ -94,36 +95,6 @@ ul, ol{
     width: 120px;
     
 }
-
-
-/* Galeria*/
-.carousel-item img{
-    height: 45vh
-}
-
-@media (min-width: 520px) {
-    .carousel-item img {
-        height: 50vh;
-    }
-}
-
-@media (min-width: 768px) {
-    .carousel-item img {
-        height: 70vh;
-    }
-    }
-
-
-@media (min-width: 1024px) {
-    .carousel-item img {
-        height: 80vh;
-    }
-}
-
-#carouselExampleFade{
-    width: 70%;
-}
-
 
 
 .trabajos{
@@ -332,8 +303,8 @@ footer{
     }
   
     .container-opciones label:hover {
-    background-color: #c5c0c0;
-    border: none;
+        background-color: #c5c0c0;
+        border: none;
     }
 
     #electronicas:checked ~ .container-opciones .label-electronicas,
