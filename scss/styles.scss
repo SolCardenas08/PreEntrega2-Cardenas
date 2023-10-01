@@ -1,3 +1,7 @@
+@import "estilos-index";
+@import "estilos-comunes";
+@import "estilos-galeria";
+
 /* el asterisco es un selector universal*/
 *{
     margin: 0;
@@ -193,6 +197,8 @@ img{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+
         
         gap: 20px;
     }
@@ -288,51 +294,50 @@ footer{
 /* Filtro */
 #electronicas, #mecanicas, #todas {
     display: none;
-}
-
-.electro, .mecanic{
+  }
+  
+  .electronicas, .mecanicas {
     display: none;
-}
-
-#electronicas:checked ~ .padre-cards .electro, 
-#dulces:checked ~ .padre-cards .mecan { 
+  }
+  
+  #electronicas:checked ~ .padre-cards .electronicas,
+  #mecanicas:checked ~ .padre-cards .mecanicas {
     display: flex;
-}
-
-#todas:checked ~ .padre-cards .electro, 
-#todas:checked ~ .padre-cards .mecan {
+  }
+  
+  #todas:checked ~ .padre-cards .electronicas,
+  #todas:checked ~ .padre-cards .mecanicas {
     display: flex;
-}
-
-.container-opciones {
+  }
+  
+  .container-opciones {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
-}
-
-@media (min-width: 560px) {
-    .container-opciones {
-        flex-direction: row;
     }
-}
-
-.container-opciones label {
+  
+    @media (min-width: 560px) {
+    .container-opciones {
+    flex-direction: row;
+    }
+    }
+    .container-opciones label {
     border: solid 1px;
     padding: 8px 15px;
     width: 150px;
     text-align: center;
     cursor: pointer;
-}
-
-.container-opciones label:hover {
-    background-color: #2A294D;
+    }
+  
+    .container-opciones label:hover {
+    background-color: #c5c0c0;
     border: none;
-}
+    }
 
-#electronicas:checked ~ .container-opciones .label-electronicas,
+    #electronicas:checked ~ .container-opciones .label-electronicas,
 #mecanicas:checked ~ .container-opciones .label-mecanicas,
 #todas:checked ~ .container-opciones .label-todas {
-    background-color: lightslategrey;
+  background-color: #c5c0c0;
 }
