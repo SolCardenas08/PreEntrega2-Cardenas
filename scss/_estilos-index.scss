@@ -1,0 +1,99 @@
+
+.trabajos{
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/* Buena practica tenerlo siempre*/
+img{
+    max-width: 100%;
+}
+
+.enlaces {
+    color: $color-terciario;
+    background-color: $color-secundario;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.banner{
+    background-image: url(../img/banner-fondo2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .banner h1{
+        background-color: $color-secundario;
+        color: #2A294D;
+        text-align: center;
+        font-size: 30px;
+
+    }
+
+    section{
+        margin: 50px 0;
+        font-size: 15px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .h2-experiencia{
+        margin-top: 20px;
+
+    }
+
+    .parrafo-desc{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    /* Cards */
+    .card{
+        max-width: 100%;
+    }
+
+    .card-img-top {
+        height: 300px;
+    }
+
+    .padre-cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        
+        gap: 20px;
+    }
+
+    @media (min-width: 768px){
+        .padre-cards{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-items: start;
+            
+        }
+    }
+
+    @media (min-width: 992px){
+        .padre-cards{
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+    }
+
+    .icono-texto img{
+        width: 70px;
+        
+    }

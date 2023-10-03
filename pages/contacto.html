@@ -16,6 +16,14 @@
 <body id="body-contacto">
     <header class="header">
 
+        <div class="nav-menu">
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn"></label>
+            <i class="menu-icon"><img src="img/navbarlogo.png" alt=""></i>
+    
+            </div>
+
         <a href="index.html">
             <img src="../img/logo-delfis.webp" alt="logo delfis" class="logo">
         </a>
@@ -48,33 +56,15 @@
         </nav>
     </header>
 
-    <section class=" container row mx-auto">
-        <h1 class=" fondo-imagen">Contacto</h1>
+    <section class=" container row mx-auto form-register my-5">
+        <h1 class="my-5">Formulario de contacto</h1>
 
-        <form >
+        <input class="controls" type="text" name="Nombre y apellido" id="nombre" placeholder="Ingrese su nombre y apellido">
+        <input class="controls" type="email" name="Correo electronico" id="nombre" placeholder="Ingrese su mail">
+        <input class="controls" type="tel" name="Telefono de contacto" id="nombre" placeholder="Ingrese su telefono">
 
-            <fieldset>
-                <legend>Dejanos tu consulta</legend>
-                <p>
-                    <label for="Nombre">Nombre y apellido</label>
-                    
-                    <input type="text" id="Nombre">
-                </p>
-                <p> <label for="Telefono">Telefono de contacto</label>
-                    <input type="tel" id="Telefono">
-                </p>
-        
-                    <p><label for="Correo">Correo electronico</label>
-                        <input type="email" id="Correo">
-                    </p>
-        
-                    <p><label for="Mensaje">Comentario</label>
-                        <textarea id="Mensaje" cols="50" rows="20"></textarea>
-                    </p>
-        
-                    <input type="submit" value="Enviar formulario">
-            </fieldset>
-        </form>
+        <input class="botons-form" type="submit" value="Enviar formulario">
+
     </section>
 
     <footer class="text.center">

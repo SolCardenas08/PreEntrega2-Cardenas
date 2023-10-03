@@ -1,0 +1,51 @@
+/* Filtro */
+#electronicas, #mecanicas, #todas {
+    display: none;
+    }
+    
+    .electronicas, .mecanicas {
+    display: none;
+    }
+    
+    #electronicas:checked ~ .padre-cards .electronicas,
+    #mecanicas:checked ~ .padre-cards .mecanicas {
+    display: flex;
+    }
+    
+    #todas:checked ~ .padre-cards .electronicas,
+    #todas:checked ~ .padre-cards .mecanicas {
+    display: flex;
+    }
+    
+    .container-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    label {
+        border: solid 1px;
+    padding: 8px 15px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #c5c0c0;
+        border: none;
+    }
+    }
+    }
+    
+    @media (min-width: 560px) {
+    .container-opciones {
+    flex-direction: row;
+    }
+    }
+    
+    #electronicas:checked ~ .container-opciones .label-electronicas,
+#mecanicas:checked ~ .container-opciones .label-mecanicas,
+#todas:checked ~ .container-opciones .label-todas {
+    background-color: #c5c0c0;
+}
