@@ -18,10 +18,8 @@
     }
     
     .container-opciones {
-    display: flex;
-    flex-direction: column;
+    @include flex-colum-center;
     align-items: center;
-    justify-content: center;
     gap: 20px;
 
     label {
@@ -48,4 +46,8 @@
 #mecanicas:checked ~ .container-opciones .label-mecanicas,
 #todas:checked ~ .container-opciones .label-todas {
     background-color: #c5c0c0;
+}
+
+p {
+    font-size: $size-h1 - 1rem;
 }

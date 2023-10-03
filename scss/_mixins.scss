@@ -1,7 +1,10 @@
-@mixin flex-colum-center-item {
+@mixin flex-colum-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
+@mixin sizes ($width, $height) {
+    height: $height;
+    width: $width;
+}
