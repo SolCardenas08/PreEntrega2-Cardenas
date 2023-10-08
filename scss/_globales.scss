@@ -9,7 +9,19 @@ html{
 
 body{
     font-family: $fuente-principal;
-    font-family: $fuente-secundaria;
+    background-color: $color-primario;
+    color: $color-secundario;
+}
+
+.lista-nav, .lista-nav .active {
+    color: $color-primario;
+
+    &:hover {
+        color: $color-terciario;
+    }
+}
+
+.lista-nav .active {
     background-color: $color-secundario;
 }
 
@@ -26,9 +38,7 @@ h1{
     
 }
 
-h2 {
-    font-size: calc($size-h1 /2);
-}
+
 
 header{
     background-color: #232323;
@@ -37,11 +47,8 @@ header{
 }
 
 
-.menu-icon img{
-    @include sizes( 30px,30px);
-    border-radius: 2px;
-}
 
+/*
 .menu-icon, #check{
     display: none;
 }
@@ -76,7 +83,7 @@ header{
     #check:checked ~ ul {
         left: 0;
     }
-
+*/
 
 
 a{

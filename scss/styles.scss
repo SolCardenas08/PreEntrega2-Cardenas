@@ -1,14 +1,10 @@
 @import "variables";
-@import "mixins";
-@import "estilos-comunes";
-@import "estilos-servicios";
-@import "estilos-index";
-@import "estilos-galeria";
-@import "estilos-contacto";
+@import "globales";
+@import "servicios";
+@import "inicio";
+@import "galeria";
+@import "contacto";
 
-// Media Queries
-
-@import "media-queries";
 
 
 

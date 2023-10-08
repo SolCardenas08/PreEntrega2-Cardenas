@@ -1,7 +1,36 @@
-$color-primario: #fff;
-$color-secundario: #C5C0C0;
-$color-terciario: #232323;
+/* Paleta de colores*/
+$color-primario: #C5C0C0;
+$color-secundario: #000;
+$color-terciario: #fff;
 
+/*Fuente principal*/
 $fuente-principal: 'Poppins', sans-serif;
-$fuente-secundaria: 'Roboto', sans-serif;
-$size-h1: 3rem;
+
+/* Tamaño de fuentes*/
+$fuente-chica: 14px;
+$fuente-media: 20px;
+$fuente-grande: 28px;
+$icono: 40px;
+
+/* Resolucion de pantallas*/
+$tablet: 768px;
+$desktop: 992px;
+$desktop-XG: 1200px;
+
+/*Espaciado*/
+$espaciado-general: 20px;
+
+/*Mixins*/
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-fila {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
