@@ -18,19 +18,6 @@ body{
     background-color: $color-primario;
 }
 
-@media (min-width: 768px) {
-    #body-index, #body-galeria, #body-historia, #body-servicios, #body-contacto{
-        background-color: #7F7F7F;
-    }
-}
-
-@media (min-width= 992px) {
-    #body-index, #body-galeria, #body-historia, #body-servicios, #body-contacto{
-    background-color: #A8BA9A
-    
-    }
-    
-}
 
 h1{
     color: midnightblue;
@@ -59,11 +46,7 @@ header{
     display: none;
 }
 
-@media (max-width: 768px){
-    .checkbtn{
-        display: block;
-    }
-    .menu-icon{
+.menu-icon{
         display: block;
         position: fixed;
         top: 20px;
@@ -93,7 +76,7 @@ header{
     #check:checked ~ ul {
         left: 0;
     }
-}
+
 
 
 a{
@@ -133,8 +116,7 @@ ul, ol{
 .logo{
     display: block;
     margin: 0 auto;
-    width: 120px;
-    
+    width: 120px;    
 }
 
 footer{
