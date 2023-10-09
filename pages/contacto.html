@@ -5,89 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../img/logo-delfis.webp" type="image/x-icon">
 
+    <!-- Palabras clave -->
+    <meta name="keywords" content="autos, automotor, contratacion, presupuesto, consulta, cotizacion, trabajo">
+    <!-- Descripción -->
+    <meta name="description" content="Tu consulta nos importa! dejanos tu comentario, duda o consulta y nos pondremos en contacto.">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <!--Link a CSS Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
         <!--Archivo CSS-->
     <link rel="stylesheet" href="../css/styles.css">
-
-    <meta name="description" content="Tu consulta nos importa! dejanos tu comentario, duda o consulta y nos pondremos en contacto.">
-    <meta name="keywords" content="autos, automotor, contratacion, presupuesto, consulta, cotizacion, trabajo">
     
     <title>Contacto | Delfis Automotor</title>
 </head>
-<body id="body-contacto">
-    <header class="header">
+<body>
+    <header>
 
-        <div class="nav-menu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
 
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"></label>
-            <i class="menu-icon"><img src="../img/navbarlogo.png" alt="navbar-logo"></i>
-    
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/historia.html">Historia</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-        <a href="index.html">
-            <img src="../img/logo-delfis.webp" alt="logo delfis" class="logo">
-        </a>
-        <!--nav es la semantica para menu de navegacion interno-->
-        <nav>
-            <!--lista desordenada con el menu de navegacion-->
-
-        <ul class="lista-nav lista-nav2">
-        
-            <li>
-                <a href="../index.html" class="enlaces">Inicio</a>
-            </li>
-
-            <li>
-                <a href="historia.html" class="enlaces">Historia</a>
-            </li>
-
-            <li>
-                <a href="galeria.html" class="enlaces">Galeria de imagenes</a>
-            </li>
-
-            <li>
-                <a href="servicios.html" class="enlaces">Servicios</a>
-            </li>
-
-            <li>
-                <a href="contacto.html" class="enlaces">Contacto</a>
-            </li>
-        </ul>
         </nav>
     </header>
 
-    <main class=" container row mx-auto form-register my-5">
-        <h1 class="my-5">Formulario de contacto</h1>
-
-        <input class="controls" type="text" name="Nombre y apellido" id="nombre" placeholder="Ingrese su nombre y apellido">
-        <input class="controls" type="email" name="Correo electronico" id="nombre" placeholder="Ingrese su mail">
-        <input class="controls" type="tel" name="Telefono de contacto" id="nombre" placeholder="Ingrese su telefono">
-
-        <input class="botons-form" type="submit" value="Enviar formulario">
-
-    </main>
-
-    <footer class="text.center">
-        <p class="px">Donde hay calidad, no hay competencia</p>
-        <p class="rem">Donde hay calidad, no hay competencia</p>
-    </footer>
-
-    <div class="redes-sociales">
-        <a href="#" class="icono-redes">
-            <img src="../img/logo-wp2.png" alt="icono whatsapp">
-        </a>
-        <a href="http://www.facebook.com" target="_blank" class="icono-redes"> 
-            <img src="../img/logo-fb.png" alt="icono facebook">
-        </a>
-        <a href="http://www.instagram.com" target="_blank" class="icono-redes">
-            <img src="../img/logo-instagram.png" alt="icono instagram">
-        </a>
+    <div class="banner">
+        <h1>La mejor atencion para tu auto garantizada</h1>
     </div>
 
+    <section>
+        <h2>Queremos ayudarte</h2>
+
+        <p class="text-center">Completa tus datos en nuestro formulario y a la brevedad nos contactaremos con vos.</p>
+    </section>
+
+    <main class="main-contacto container">
+        <form>
+            <h3 class="text-center my-5">Formulario</h3>
+            <div class="campos">
+                <label for="nombreApellido">Nombre y apellido</label>
+                <input type="text" id="nombreApellido" placeholder="Tu nombre completo" required>
+            </div>
+            <div class="campos">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" placeholder="Tu e-mail" required>
+            </div>
+            <div class="campos">
+                <label for="telf">Número de teléfono</label>
+                <input type="tel" id="telf">
+            </div>
+            <div class="campos">
+                <label for="mensaje">Dejanos tu consulta o mensaje</label>
+                <textarea id="mensaje"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar formulario" class="botones-form">
+            <input type="reset" value="Limpiar" class="botones-form">
+        </form>
+    </main>
+
+    <section class="container">
+        <h2>¿Necesitas ayuda con tu vehiculo?</h2>
+
+        <p>Te esperamos para brindarte el mejor servicio personalizado. No lo duudes mas y <a href="pages/contacto.html" class="enlace-contacto">contactate con nosotros</a></p>
+    </section>
+
+<footer class="container">
+        <p class="px">Donde hay calidad, no hay competencia</p>
+        <p class="rem">Donde hay calidad, no hay competencia</p>
+
+        <div class="container-redes">
+            <a href="#" class="icono-redes">
+                <img src="../img/logo-wp2.png" alt="icono whatsapp">
+            </a>
+            <a href="http://www.facebook.com" target="_blank" class="icono-redes"> 
+                <img src="../img/logo-fb.png" alt="icono facebook">
+            </a>
+            <a href="http://www.instagram.com" target="_blank" class="icono-redes">
+                <img src="../img/logo-instagram.png" alt="icono instagram">
+            </a>
+        </div>
+    </footer>
+
         <!-- Script de Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

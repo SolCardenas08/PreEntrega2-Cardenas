@@ -5,6 +5,11 @@
 
 html{
     font-size: 62.5%;
+} 
+
+
+header {
+    background-color: lightslategrey;
 }
 
 body{
@@ -13,170 +18,84 @@ body{
     color: $color-secundario;
 }
 
-.lista-nav, .lista-nav .active {
-    color: $color-primario;
+.nav.link {
+    color: $color-secundario;
 
     &:hover {
-        color: $color-terciario;
+        color: whitesmoke;
     }
 }
 
-.lista-nav .active {
-    background-color: $color-secundario;
-}
-
-/* Ejemplo Mobile First*/
-#body-index, #body-galeria, #body-historia, #body-servicios, #body-contacto{
-    background-color: $color-primario;
-}
-
-
-h1{
-    color: midnightblue;
-    text-align: center;
-    font-size: 15px;
-    
-}
-
-
-
-header{
-    background-color: #232323;
-    text-decoration: none;
-    
-}
-
-
-
-/*
-.menu-icon, #check{
-    display: none;
-}
-
-.menu-icon{
-        display: block;
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-    }
-    .nav-menu ul{
-        display: block;
-        position: fixed;
-        top: 70px;
-        left: -100%;
-        background: #222;
-        width: 100%;
-        height: 100vh;
-        right: 0;
-    }
-    .nav.menu ul li{
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-    }
-    .nav.menu ul li:last-child{
-        background: none;
-        padding: 1rem;
-    }
-    #check:checked ~ ul {
-        left: 0;
-    }
-*/
-
-
-a{
-    text-decoration: none;
-}
-
-ul, ol{
-    list-style: none;
-    margin-left: 5px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-size: 25px
-    
-}
-
-
-.px{
-    font-size: 16px;
-    text-align: center;
-    font-style: oblique;
-}
-
-.rem{
-    font-size: 1rem; /* 2.5 rem = 25 px*/
-    text-align: center;
-    font-style: oblique;
-}
-
-.lista-nav li{
-    display: inline;
-    font-size: 15px;
-    text-decoration: double;
-    gap: 20px;
-}
-
-.logo{
-    display: block;
-    margin: 0 auto;
-    width: 120px;    
-}
-
-footer{
-    background-color: $color-terciario;
+.nav-link.active {
     color: $color-secundario;
-    text-align: center;
-    padding: 30px;
+    background-color: whitesmoke;
 }
 
-.redes-sociales{
-    @include flex-colum-center;
-    align-items: center;
+.navbar-toggler {
+    margin-bottom: $espaciado-general;
+}
+
+h1,h2 {
+    text-align: center;
+    margin-top: $espaciado-general * 2;
+    margin-bottom: $espaciado-general * 2;
+}
+
+p {
+    font-size: $fuente-media;
+    margin: 0 auto;
+}
+
+img {
+        max-width: 100%;
+    }
+
+    .px{
+        font-size: 16px;
+        text-align: center;
+        font-style: oblique;
+    }
+    
+    .rem{
+        font-size: 1rem; /* 2.5 rem = 25 px*/
+        text-align: center;
+        font-style: oblique;
+    }
+    
+
+footer {
+    margin-top: $espaciado-general * 3;
+    @include flex-columna;
+
+    .container-redes {
+    @include flex-columna;
     gap: 20px;
     position: fixed;
     bottom: 30%;
     right: 50px;
-}
-
-.icono-redes{
-    width: 30px;
-}
-
-
-/* Sintaxis de las media queries*/
-@media (max-width: 480px) and (min-width: 992px) {
-    section {
-        text-align: center;
     }
+
+    .icono-redes{
+        width: 30px;
+}
 }
 
-.header{
-    @include flex-colum-center;
-    align-items: center;
-    gap: 20px;
+.boton {
+    border: solid 1px $color-terciario;
+    width: 200px;
+    text-align: center;
+    padding: 5px $espaciado-general;
 }
 
+.enlace-contacto {
+    @extend .boton;
+    text-decoration: none;
+    color: $color-secundario;
+    background-color: $color-primario;
+    transition: all .3s;
 
-@media (min-width: 768px) {
-    .header {
-        flex-direction: row;
-        
-    }
-}
-
-.lista-nav2{
-    @include flex-colum-center;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-}
-
-@media (min-width: 560px) {
-    .lista-nav2{
-        flex-direction: row;
+    &:hover {
+        background-color: $color-secundario;
+        color: $color-primario;
     }
 }

@@ -1,0 +1,23 @@
+.card{
+    max-width: 100%;
+}
+
+.container-cards {
+    @include flex-columna;
+    gap: $espaciado-general;
+}
+
+@media (min-width: $tablet) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: start;
+    }
+}
+
+@media (min-width: $desktop) {
+    .container-opciones{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

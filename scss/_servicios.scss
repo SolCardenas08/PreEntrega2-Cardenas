@@ -1,4 +1,16 @@
 /* Filtro */
+.card{
+    max-width: 100%;
+}
+
+.card-img-top {
+    height: 300px;
+}
+.padre-cards{
+    @include flex-columna;
+    gap: $espaciado-general;
+}
+
 #electronicas, #mecanicas, #todas {
     display: none;
     }
@@ -18,36 +30,48 @@
     }
     
     .container-opciones {
-    @include flex-colum-center;
-    align-items: center;
-    gap: 20px;
+    @include flex-columna;
+    gap: $espaciado-general;
 
     label {
-        border: solid 1px;
+    border: solid 1px;
     padding: 8px 15px;
     width: 150px;
     text-align: center;
     cursor: pointer;
+    transition: all .3s;
 
     &:hover {
-        background-color: #c5c0c0;
+        background-color: lightslategray;
         border: none;
     }
     }
     }
     
-    @media (min-width: 560px) {
+    @media (min-width: $tablet) {
+
     .container-opciones {
-    flex-direction: row;
+        flex-direction: row;
+        }
+    .padre-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: start;
     }
+    }
+    
+    @media (min-width: $desktop) {
+        .container-opciones{
+            flex-direction: row;
+        }
+        .padre-cards {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
     
     #electronicas:checked ~ .container-opciones .label-electronicas,
 #mecanicas:checked ~ .container-opciones .label-mecanicas,
 #todas:checked ~ .container-opciones .label-todas {
-    background-color: #c5c0c0;
-}
-
-p {
-    font-size: $size-h1 - 1rem;
+    background-color: lightslategray;
 }

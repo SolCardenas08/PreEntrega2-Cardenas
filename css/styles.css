@@ -1,18 +1,296 @@
-/* Error: Undefined mixin.
- *     ,
- * 137 |     @include flex-colum-center;
- *     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
- *     '
- *   scss\_globales.scss 137:5  @import
- *   scss\styles.scss 2:9       root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a     \2577 \a 137 \2502      @include flex-colum-center;\d\a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^\a     \2575 \a   scss\\_globales.scss 137:5  @import\a   scss\\styles.scss 2:9       root stylesheet";
+@charset "UTF-8";
+/* Paleta de colores*/
+/*Fuente principal*/
+/* Tamaño de fuentes*/
+/* Resolucion de pantallas*/
+/*Espaciado*/
+/*Mixins*/
+* {
+  margin: 0;
+  padding: 0;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  background-color: lightslategrey;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #C5C0C0;
+  color: #000;
+}
+
+.nav.link {
+  color: #000;
+}
+.nav.link:hover {
+  color: whitesmoke;
+}
+
+.nav-link.active {
+  color: #000;
+  background-color: whitesmoke;
+}
+
+.navbar-toggler {
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p {
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.px {
+  font-size: 16px;
+  text-align: center;
+  font-style: oblique;
+}
+
+.rem {
+  font-size: 1rem; /* 2.5 rem = 25 px*/
+  text-align: center;
+  font-style: oblique;
+}
+
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .container-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  bottom: 30%;
+  right: 50px;
+}
+footer .icono-redes {
+  width: 30px;
+}
+
+.boton, form .botones-form, .enlace-contacto {
+  border: solid 1px #fff;
+  width: 200px;
+  text-align: center;
+  padding: 5px 20px;
+}
+
+.enlace-contacto {
+  text-decoration: none;
+  color: #000;
+  background-color: #C5C0C0;
+  transition: all 0.3s;
+}
+.enlace-contacto:hover {
+  background-color: #000;
+  color: #C5C0C0;
+}
+
+.banner {
+  background-image: url(../img/banner-fondo2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icono-texto img {
+  width: 70px;
+}
+
+.carousel-item img {
+  height: 45vh;
+}
+
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
+    height: 80vh;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel-item img {
+    height: 90vh;
+  }
+}
+#carouselExampleFade {
+  width: 70%;
+}
+
+/* Filtro */
+.card {
+  max-width: 100%;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+.padre-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#electronicas, #mecanicas, #todas {
+  display: none;
+}
+
+.electronicas, .mecanicas {
+  display: none;
+}
+
+#electronicas:checked ~ .padre-cards .electronicas,
+#mecanicas:checked ~ .padre-cards .mecanicas {
+  display: flex;
+}
+
+#todas:checked ~ .padre-cards .electronicas,
+#todas:checked ~ .padre-cards .mecanicas {
+  display: flex;
+}
+
+.container-opciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container-opciones label {
+  border: solid 1px;
+  padding: 8px 15px;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.container-opciones label:hover {
+  background-color: lightslategray;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .container-opciones {
+    flex-direction: row;
+  }
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
+  }
+}
+@media (min-width: 992px) {
+  .container-opciones {
+    flex-direction: row;
+  }
+  .padre-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+#electronicas:checked ~ .container-opciones .label-electronicas,
+#mecanicas:checked ~ .container-opciones .label-mecanicas,
+#todas:checked ~ .container-opciones .label-todas {
+  background-color: lightslategray;
+}
+
+.main-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+form .campos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form .botones-form {
+  background-color: #000;
+  font-weight: bold;
+  color: #C5C0C0;
+  transition: ease-in 0.4s;
+}
+form .botones-form:hover {
+  background-color: #C5C0C0;
+  color: #000;
+}
+
+.card {
+  max-width: 100%;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: start;
+  }
+}
+@media (min-width: 992px) {
+  .container-opciones {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

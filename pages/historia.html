@@ -4,89 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Palabras clave -->
+    <meta name="keywords" content="autos, automotor, historia, taller, mecanica, electromecanica">
+    <!-- Descripción -->
+    <meta name="description" content="Te contamos un poco mas sobre nosotros para que conozcas nuesto inicio y nuestra meta a futuro.">
+
     <link rel="shortcut icon" href="../img/logo-delfis.webp" type="image/x-icon">
 
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
     <!--Link a CSS Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <!--Archivo CSS-->
     <link rel="stylesheet" href="../css/styles.css">
 
-    <meta name="description" content="Te contamos un poco mas sobre nosotros para que conozcas nuesto inicio y nuestra meta a futuro.">
-    <meta name="keywords" content="autos, automotor, historia, taller, mecanica, electromecanica">
 
     <title>Historia | Delfis Automotor</title>
 </head>
-<body id="body-historia">
-    <header class="header">
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
 
-        <div class="nav-menu">
-
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn"></label>
-            <i class="menu-icon"><img src="../img/navbarlogo.png" alt="navbar-logo"></i>
-    
+                        <li class="nav-item">
+                            <a class="nav-link active" href="pages/historia.html">Historia</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a  class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+            
+                        <li class="nav-item">
+                            <a  class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        <a href="index.html">
-            <img src="../img/logo-delfis.webp" alt="logo delfis" class="logo">
-        </a>
-        <!--nav es la semantica para menu de navegacion interno-->
-        <nav>
-            <!--lista desordenada con el menu de navegacion-->
-
-        <ul class="lista-nav lista-nav2">
-        
-            <li>
-                <a href="../index.html" class="enlaces">Inicio</a>
-            </li>
-
-            <li>
-                <a href="historia.html" class="enlaces">Historia</a>
-            </li>
-
-            <li>
-                <a href="galeria.html" class="enlaces">Galeria de imagenes</a>
-            </li>
-
-            <li>
-                <a href="servicios.html" class="enlaces">Servicios</a>
-            </li>
-
-            <li>
-                <a href="contacto.html" class="enlaces">Contacto</a>
-            </li>
-        </ul>
         </nav>
     </header>
 
-    <sectionm>
-        <h1 class="h2-experiencia my-5">Te contamos un poco mas de nosotros</h1>
+    <div class="banner">
+        <h1>La mejor atencion para tu auto garantizada</h1>
+    </div>
+
+    <section>
+        <h2>Te contamos un poco mas de nosotros</h2>
                 <div>
-                    <p class="parrafo-desc">Ubicados en la zona norte de la provincia de Buenos Aires, Delfis automotor nace como una idea familiar basada en la experiencia y dedicacion en el cuidado de autos. Empezamos brindando servicios basicos en la mecanica pero siempre enfocados en seguir aprendiendo y capacitandonos sobre las nuevas tecnicas tanto en mecanica como electronica. Asi es como al dia de hoy contamos con escaneo computarizado para brindarte un diagnostico presciso sobre tu auto y asi poder brindarte un asesoramiento personalizado, sin vueltas ni demoras.
-                    </p>
-                    <p class="parrafo-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, doloribus. Sit provident ipsum numquam, eos ipsam deleniti placeat excepturi ut possimus, cum assumenda laborum eum aperiam voluptatum, architecto nostrum reprehenderit!</p>
-                    <p class="parrafo-desc">Somos un equipo en crecimiento, apasionados por las buenas practicas a la hora de reparar tu automovil. No dudes en consultarnos!</p>
+                    <p class="text-center my-5">Ubicados en la zona norte de la provincia de Buenos Aires, Delfis automotor nace como una idea familiar basada en la experiencia y dedicacion en el cuidado de autos. Empezamos brindando servicios basicos en la mecanica pero siempre enfocados en seguir aprendiendo y capacitandonos sobre las nuevas tecnicas tanto en mecanica como electronica. Asi es como al dia de hoy contamos con escaneo computarizado para brindarte un diagnostico presciso sobre tu auto y asi poder brindarte un asesoramiento personalizado, sin vueltas ni demoras.
+                    </p class="text-center my-5">
+                    <p class="text-center my-5">Somos un equipo en crecimiento, apasionados por las buenas practicas a la hora de reparar tu automovil. Nuestro personal cuenta con capacitacion certificada por <strong>Galante D' antonio, consecionaria numero uno de Renault.</strong> No dudes en consultarnos!</p>
                 </div>
     </section>
 
-<footer class="text.center">
+    <section class="container-cards my-5">
+        <div class="card" style="width: 18rem;">
+            <img src="../img/card-1.jpeg" class="card-img-top" alt="muestra-1">
+            <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+            <img src="../img/card-2.jpeg" class="card-img-top" alt="muestra-2">
+            <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+            <img src="../img/card-3.jpeg" class="card-img-top" alt="muestra-3">
+            <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+            <img src="../img/card-4.jpeg" class="card-img-top" alt="muestra-4">
+            <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            </div>
+    </section>
+
+    <section class="container">
+        <h2>¿Necesitas ayuda con tu vehiculo?</h2>
+
+        <p>Te esperamos para brindarte el mejor servicio personalizado. No lo duudes mas y <a href="../pages/contacto.html" class="enlace-contacto">contactate con nosotros</a></p>
+    </section>
+
+<footer class="container">
         <p class="px">Donde hay calidad, no hay competencia</p>
         <p class="rem">Donde hay calidad, no hay competencia</p>
+
+        <div class="container-redes">
+            <a href="#" class="icono-redes">
+                <img src="../img/logo-wp2.png" alt="icono whatsapp">
+            </a>
+            <a href="http://www.facebook.com" target="_blank" class="icono-redes"> 
+                <img src="../img/logo-fb.png" alt="icono facebook">
+            </a>
+            <a href="http://www.instagram.com" target="_blank" class="icono-redes">
+                <img src="../img/logo-instagram.png" alt="icono instagram">
+            </a>
+        </div>
     </footer>
 
-    <div class="redes-sociales">
-        <a href="#" class="icono-redes">
-            <img src="../img/logo-wp2.png" alt="icono whatsapp">
-        </a>
-        <a href="http://www.facebook.com" target="_blank" class="icono-redes"> 
-            <img src="../img/logo-fb.png" alt="icono facebook">
-        </a>
-        <a href="http://www.instagram.com" target="_blank" class="icono-redes">
-            <img src="../img/logo-instagram.png" alt="icono instagram">
-        </a>
-    </div>
-
         <!-- Script de Bootstrap-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

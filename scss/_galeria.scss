@@ -1,6 +1,23 @@
-/* Galeria*/
 .carousel-item img{
     height: 45vh
+}
+
+@media (min-width: $tablet) {
+    .carousel-item img{
+        height: 70vh
+}
+}
+
+@media (min-width: $desktop){
+    .carousel-item img{
+        height: 80vh
+}
+}
+
+@media (min-width: $desktop-XG){
+    .carousel-item img{
+        height: 90vh
+}
 }
 
 #carouselExampleFade{
