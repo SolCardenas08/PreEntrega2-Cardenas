@@ -3,18 +3,9 @@
     gap: $espaciado-general * 2;
 }
 
-img {
+iframe {
     max-width: 100%;
 }
-
-@media (min-width: $tablet) {
-    .main-contacto {
-        display: grid;
-        grid-template-columns: repeat(2 , 1fr);
-        justify-items: center;
-        align-items: center;
-        }
-    }
 
     form {
         @include flex-columna;
@@ -37,3 +28,12 @@ img {
             }
         }
     }
+
+    @media (min-width: $tablet) {
+        .main-contacto {
+            display: grid;
+            grid-template-columns: repeat(2 , 1fr);
+            justify-items: center;
+            align-items: center;
+            }
+        }

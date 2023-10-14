@@ -51,7 +51,7 @@ h1, h2 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 20px;
   margin: 0 auto;
 }
 
@@ -245,18 +245,10 @@ footer .icono-redes {
   gap: 40px;
 }
 
-img {
+iframe {
   max-width: 100%;
 }
 
-@media (min-width: 768px) {
-  .main-contacto {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-  }
-}
 form {
   display: flex;
   flex-direction: column;
@@ -281,6 +273,14 @@ form .botones-form:hover {
   color: #000;
 }
 
+@media (min-width: 768px) {
+  .main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
 .container-padre {
   display: flex;
   flex-direction: column;
