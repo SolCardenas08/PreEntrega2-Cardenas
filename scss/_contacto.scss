@@ -3,10 +3,16 @@
     gap: $espaciado-general * 2;
 }
 
+img {
+    max-width: 100%;
+}
+
 @media (min-width: $tablet) {
     .main-contacto {
-        @include flex-columna;
-        gap: $espaciado-general * 4;
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        justify-items: center;
+        align-items: center;
         }
     }
 
@@ -22,12 +28,12 @@
             @extend .boton;
             background-color: $color-secundario;
             font-weight: bold;
-            color: $color-primario;
+            color: $color-terciario;
             transition: ease-in .4s;
 
             &:hover {
                 background-color: $color-primario;
-                color: $color-secundario;
+                color: $color-terciario
             }
         }
     }

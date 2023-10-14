@@ -245,13 +245,16 @@ footer .icono-redes {
   gap: 40px;
 }
 
+img {
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
   .main-contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
     align-items: center;
-    gap: 80px;
   }
 }
 form {
@@ -270,12 +273,12 @@ form .campos {
 form .botones-form {
   background-color: #C5C0C0;
   font-weight: bold;
-  color: #F1F7ED;
+  color: #000;
   transition: ease-in 0.4s;
 }
 form .botones-form:hover {
   background-color: #F1F7ED;
-  color: #C5C0C0;
+  color: #000;
 }
 
 .container-padre {
@@ -296,6 +299,7 @@ form .botones-form:hover {
 }
 .container-historia img {
   width: 300px;
+  height: 250px;
 }
 
 .reverse {
