@@ -3,23 +3,28 @@
     padding: 0;
 }
 
-html{
+/*html{
     font-size: 62.5%;
-} 
+} */
 
 
 header {
     background-color: lightslategrey;
+    z-index: 1;
+    opacity: .9;
+    position: sticky;
+    top: 0;
+
 }
 
 body{
     font-family: $fuente-principal;
     background-color: $color-primario;
-    color: $color-secundario;
+    color: $color-terciario;
 }
 
 .nav.link {
-    color: $color-secundario;
+    color: $color-terciario;
 
     &:hover {
         color: whitesmoke;
@@ -27,7 +32,7 @@ body{
 }
 
 .nav-link.active {
-    color: $color-secundario;
+    color: $color-terciario;
     background-color: whitesmoke;
 }
 
@@ -39,10 +44,11 @@ h1,h2 {
     text-align: center;
     margin-top: $espaciado-general * 2;
     margin-bottom: $espaciado-general * 2;
+    font-size: $fuente-grande;
 }
 
 p {
-    font-size: $fuente-media;
+    font-size: $fuente-chica;
     margin: 0 auto;
 }
 
@@ -61,7 +67,7 @@ img {
         text-align: center;
         font-style: oblique;
     }
-    
+
 
 footer {
     margin-top: $espaciado-general * 3;
@@ -90,12 +96,12 @@ footer {
 .enlace-contacto {
     @extend .boton;
     text-decoration: none;
-    color: $color-secundario;
+    color: $color-terciario;
     background-color: $color-primario;
     transition: all .3s;
 
     &:hover {
-        background-color: $color-secundario;
+        background-color: $color-terciario;
         color: $color-primario;
     }
 }

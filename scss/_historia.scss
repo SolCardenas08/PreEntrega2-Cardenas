@@ -1,23 +1,41 @@
-.card{
+.container-padre {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     max-width: 100%;
 }
 
-.container-cards {
-    @include flex-columna;
-    gap: $espaciado-general;
+.container-historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $espaciado-general + 10px;
+    background-color: #DEE2D6;
+    color: $color-terciario;
+    font-size: $fuente-grande;
+
+    img {
+        width: 300px;
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    .container-textos {
+        text-align: right;
+    }
 }
 
 @media (min-width: $tablet) {
-    .container-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: start;
+    .container-padre {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 @media (min-width: $desktop) {
-    .container-opciones{
-        grid-template-columns: repeat(4, 1fr);
+    .container-padre {
+        display: flex;
+        flex-direction: column;
     }
 }

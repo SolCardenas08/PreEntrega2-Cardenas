@@ -4,7 +4,7 @@
 }
 
 .card-img-top {
-    height: 300px;
+    height: 240px;
 }
 .padre-cards{
     @include flex-columna;
@@ -36,7 +36,7 @@
     label {
     border: solid 1px;
     padding: 8px 15px;
-    width: 150px;
+    width: 240px;
     text-align: center;
     cursor: pointer;
     transition: all .3s;
@@ -51,14 +51,14 @@
     @media (min-width: $tablet) {
 
     .container-opciones {
-        flex-direction: row;
+        flex-direction: column;
         }
-    .padre-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: start;
-    }
+        .padre-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            align-items: start;
+        }
     }
     
     @media (min-width: $desktop) {
@@ -66,7 +66,10 @@
             flex-direction: row;
         }
         .padre-cards {
-            grid-template-columns: repeat(4, 1fr);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: start;
         }
     }
     
